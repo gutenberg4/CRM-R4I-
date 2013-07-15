@@ -1,5 +1,5 @@
 <?php
-//Start session
+//Start sesiune
 session_start();
 	
 	//include detaliile de conectare la baza de date
