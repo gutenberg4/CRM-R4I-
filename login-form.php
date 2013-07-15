@@ -1,4 +1,6 @@
 <?php
+
+//start sesiune
 session_start();
 	
 if (isset($_SESSION['ERROS']))
