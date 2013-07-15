@@ -1,6 +1,7 @@
 <?php
 session_start();
 $blocat=FALSE;
+
 //Daca e blocat
 if (isset($_GET['blocat']) && $_GET['blocat']==1)
 {
