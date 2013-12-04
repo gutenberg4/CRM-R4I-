@@ -1,10 +1,10 @@
 <?php
 session_start();
 require_once '../config.php';
-                 require_once 'utils-pagination.php';
-				//print_r($_SESSION); die;
+require_once 'utils-pagination.php';
+include('../language/lang.php');
+$def = ($_GET['lang']=='') ? 'ro' : $_GET['lang'];
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,6 @@ require_once '../config.php';
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CRM</title>
 <link rel="stylesheet" href="css/style.default.css" type="text/css" />
-
 <link rel="stylesheet" href="css/responsive-tables.css">
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
@@ -26,38 +25,33 @@ require_once '../config.php';
 <script type="text/javascript" src="js/responsive-tables.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
-
 <!--old scripts-->
-
 <!--end old scripts-->
-
-
-
-
 </head>
-
 <body>
-
 <div class="mainwrapper">
-    
     <div class="header">
         <div class="logo">
             <a href="dashboard.php">CRM</a>
-        </div>
+	    <div class="language">
+		<a href="Dashboard.php?lang=ro">ro</a>
+		<a href="Dashboard.php?lang=en">en</a>
+	    </div>
+	</div>
         <div class="headerinner">
             <ul class="headmenu">
                 <li class="odd">
                     <a href="#" >
                         <span class="count"></span>
                         <span class="head-icon head-message"></span>
-                        <span class="headmenu-label">Panou</span>
+                        <span class="headmenu-label"><?=$lang[$def]['panou']?></span>
                     </a>
                 </li>
                 <li>
                     <a href="Produse/toate-produsele.php" >
                     <span class="count"></span>
                     <span class="head-icon head-users"></span>
-                    <span class="headmenu-label">Produse</span>
+                    <span class="headmenu-label"><?=$lang[$def]['produse']?></span>
                     </a> 
                 </li>
                 <li class="odd">
@@ -65,26 +59,26 @@ require_once '../config.php';
                     <a href="Furnizor/toti-furnizorii.php">
                     <span class="count"></span>
                     <span class="head-icon head-bar"></span>
-                    <span class="headmenu-label">Furnizori</span>
+                    <span class="headmenu-label"><?=$lang[$def]['furnizori']?></span>
                     </a>
                 </li>
 				<li>
 					<a href="Clienti/toti-clientii.php">
 						<span class="count"></span>
 						<span class="head-icon head-users"></span>
-						<span class="headmenu-label">Clienti</span></a>
+						<span class="headmenu-label"><?=$lang[$def]['clienti']?></span></a>
 				</li>
 				<li class="odd">
 					<a href="Contacte/toate-contactele.php">
 						<span class="count"></span>
 						<span class="head-icon head-message"></span>
-						<span class="headmenu-label">Contacte</span></a>
+						<span class="headmenu-label"><?=$lang[$def]['contacte']?></span></a>
 				</li>
 				<li>
 					<a href="Intalniri/toate-intalnirile.php">
 						<span class="count"></span>
 						<span class="head-icon head-message"></span>
-						<span class="headmenu-label">Intalniri</span></a>
+						<span class="headmenu-label"><?=$lang[$def]['intalniri']?></span></a>
 				</li>
                 <li class="right">
                     <div class="userloggedinfo">
@@ -92,8 +86,8 @@ require_once '../config.php';
                         <div class="userinfo">
                             <h5><?php echo $_SESSION['nume']. " " . $_SESSION['prenume']; ?></h5>
                            <ul> 
-						        <li><small>gmail@gmail.com</small></li>
-                                <li><a href="logout.php">Sign Out</a></li>
+						        <li><small><?=$lang[$def]['gmail']?></small></li>
+                                <li><a href="logout.php"><?=$lang[$def]['sign out']?></a></li>
                             </ul>
                         </div>
                     </div>
@@ -106,38 +100,38 @@ require_once '../config.php';
         
         <div class="leftmenu">        
             <ul class="nav nav-tabs nav-stacked">
-            	<li class="nav-header">Navigation</li>
-                <li class="active"><a href="dashboard.php"><span class="iconfa-laptop"></span> Panou principal</a></li>
-                <li class="dropdown"><a href="Produse/toate-produsele.php"><span class="iconfa-hand-up"></span> Produse </a>
+            	<li class="nav-header"><?=$lang[$def]['navigare']?></li>
+                <li class="active"><a href="dashboard.php"><span class="iconfa-laptop"></span><?=$lang[$def]['panou principal']?></a></li>
+                <li class="dropdown"><a href="Produse/toate-produsele.php"><span class="iconfa-hand-up"></span><?=$lang[$def]['produse']?></a>
                     <ul>
-                        <li><a href="Produse/toate-produsele.php">Vezi toate</a></li>
-                        <li><a href="Produse/adaugaProduse.php">Adaugă produs</a></li>
+                        <li><a href="Produse/toate-produsele.php"><?=$lang[$def]['vezi toate']?></a></li>
+                        <li><a href="Produse/adaugaProduse.php"><?=$lang[$def]['adauga produs']?></a></li>
                     </ul>                    
                 </li>
-                <li class="dropdown"><a href=""><span class="iconfa-pencil"></span>Furnizori</a>
+                <li class="dropdown"><a href=""><span class="iconfa-pencil"></span><?=$lang[$def]['furnizori']?></a>
                     <ul>
-                        <li><a href="Furnizor/toti-furnizorii.php">Vezi toti</a></li>
-                        <li><a href="Furnizor/adaugaFurnizor.php">Adaugă furnizor</a></li>
+                        <li><a href="Furnizor/toti-furnizorii.php"><?=$lang[$def]['vezi toti']?></a></li>
+                        <li><a href="Furnizor/adaugaFurnizor.php"><?=$lang[$def]['adauga furnizor']?></a></li>
                     </ul> 
                 </li>
-                <li class="dropdown"><a href=""><span class="iconfa-briefcase"></span>Clienti</a>
+                <li class="dropdown"><a href=""><span class="iconfa-briefcase"></span><?=$lang[$def]['clienti']?></a>
                     <ul>
-                        <li><a href="Clienti/toti-clientii.php">Vezi toti</a></li>
-                        <li><a href="Clienti/adaugaClient.php">Adaugă client</a></li>
+                        <li><a href="Clienti/toti-clientii.php"><?=$lang[$def]['vezi toti']?></a></li>
+                        <li><a href="Clienti/adaugaClient.php"><?=$lang[$def]['adauga client']?></a></li>
                     </ul>                     
                 </li>
              
-                <li class="dropdown"><a href=""><span class="iconfa-th-list"></span> Contacte</a>
+                <li class="dropdown"><a href=""><span class="iconfa-th-list"></span><?=$lang[$def]['contacte']?></a>
                     <ul>
-                        <li><a href="Contacte/toate-contactele.php">Vezi toate</a></li>
-                        <li><a href="Contacte/adaugaContact.php">Adaugă contact</a></li>
+                        <li><a href="Contacte/toate-contactele.php"><?=$lang[$def]['vezi toate']?></a></li>
+                        <li><a href="Contacte/adaugaContact.php"><?=$lang[$def]['adauga contact']?></a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="media.html"><span class="iconfa-picture"></span> Intalniri</a>
+                <li class="dropdown"><a href="media.html"><span class="iconfa-picture"></span><?=$lang[$def]['intalniri']?></a>
                     <ul>
-                        <li><a href="Intalniri/toate-intalnirile.php">Vezi toate</a></li>
-                        <li><a href="Intalniri/adaugaIntalnire.php">Adaugă intalnire</a></li>
-                        <li><a href="Intalniri/calendar/calendar-intalniri.php">Calendar intalniri</a></li>
+                        <li><a href="Intalniri/toate-intalnirile.php"><?=$lang[$def]['vezi toate']?></a></li>
+                        <li><a href="Intalniri/adaugaIntalnire.php"><?=$lang[$def]['adauga intalnire']?></a></li>
+                        <li><a href="Intalniri/calendar/calendar-intalniri.php"><?=$lang[$def]['calendar intalniri']?></a></li>
                     </ul>
                 </li>
                 
@@ -162,21 +156,19 @@ require_once '../config.php';
         <form action="../BusinessLogic/cautare.php" method="post" class="searchbar">
             <table border="0" cellpadding="0" cellspacing="0">
             <tr>
-                <td><input type="text" id="search" name="search" placeholder="Pentru a cauta apasa aici..."  value="Caută" onblur="if (this.value=='') { this.value='Caută'; }" onfocus="if (this.value=='Caută') { this.value=''; }" class="top-search-inp" />
+                <td><input type="text" id="search" name="search" placeholder="<?=$lang[$def]['pentru cautare apasa']?>"  value="<?=$lang[$def]['cauta']?>" onblur="if (this.value=='') { this.value='<?=$lang[$def]['cauta']?>'; }" onfocus="if (this.value=='<?=$lang[$def]['cauta']?>') { this.value=''; }" class="top-search-inp" />
             </td>
             <td>
             <select id="tabela" name="tabela">
-                <option value="">Alege</option>
-                <option value="produse">Produse</option>
-                <option value="furnizori">Furnizori</option>
-                <option value="clienti">Clienți</option>
-                <option value="contacte">Contacte</option>
-                <option value="intalniri">Întâlniri</option>
+                <option value=""><?=$lang[$def]['alege']?></option>
+                <option value="produse"><?=$lang[$def]['produse']?></option>
+                <option value="furnizori"><?=$lang[$def]['furnizori']?></option>
+                <option value="clienti"><?=$lang[$def]['clienti']?></option>
+                <option value="contacte"><?=$lang[$def]['contacte']?></option>
+                <option value="intalniri"><?=$lang[$def]['intalniri']?></option>
             </select> 
             </td>
-            <td>
-                <input type="Submit" id="submit" value="Caută"  />
-            </td>
+            <td><input type="Submit" id="submit" value="<?=$lang[$def]['cauta']?>"  /></td>
             </tr>
             </table>
             </form>
@@ -187,8 +179,8 @@ require_once '../config.php';
 
             <div class="pageicon"><span class="iconfa-laptop"></span></div>
             <div class="pagetitle">
-                <h5>Functionalitati</h5>
-                <h1>Panou</h1>
+                <h5><?=$lang[$def]['functionalitati']?></h5>
+                <h1><?=$lang[$def]['panou']?></h1>
             </div>
         </div><!--pageheader-->
         
@@ -203,9 +195,9 @@ require_once '../config.php';
 
     <!--  start page-heading -->
     <div id="page-heading">
-        <h1>Panou principal</h1>
+        <h1><?=$lang[$def]['panou principal']?></h1>
         <br>
-        <h2>Tabel clienți</h2>
+        <h2><?=$lang[$def]['tabel clienti']?></h2>
     </div>
     <!-- end page-heading -->
 
@@ -225,7 +217,7 @@ require_once '../config.php';
                 <div id="message-blue">
                 <table border="0" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td class="blue-left">Bine ai revenit. <a href="MyAccount/detalii_cont.php">Intră în cont.</a> </td>
+                    <td class="blue-left"><?=$lang[$def]['bine ai revenit']?><a href="MyAccount/detalii_cont.php"><?=$lang[$def]['intra in cont']?></a> </td>
                    
                 </tr>
                 </table>
