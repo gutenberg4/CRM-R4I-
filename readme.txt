@@ -6,4 +6,7 @@ Cum se instaleaza:
 2) se verifica config.php si DB
 3) se schimba parola din DB 
 
+Scriptul permite si task-uri ceva mai avansate si pentru incepatori in functie de nivelul de competenta.
+
+
 
