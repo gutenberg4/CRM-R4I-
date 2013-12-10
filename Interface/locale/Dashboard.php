@@ -1,16 +1,8 @@
 <?php
 session_start();
-require_once '../config.php';
-require_once 'utils-pagination.php';
-//$locale = "en_US";
-$locale = ($_GET['lang']) ? $_GET['lang'] : 'en_US';
-if ($_GET['lang']=="ro") $locale = "ro_Ro"; else $locale = "en_US";
-putenv("LC_ALL=$locale"); // 'true'
-setlocale(LC_ALL, $locale);
-
-bindtextdomain('en_US', "./language/locale/");
-bind_textdomain_codeset('en_US', 'UTF-8'); 
-textdomain('en_US');
+//require_once '../config.php';
+//require_once 'utils-pagination.php';
+//print_r($_SESSION); die;
 ?>
 
 <!DOCTYPE html>
@@ -51,10 +43,6 @@ textdomain('en_US');
     <div class="header">
         <div class="logo">
             <a href="dashboard.php">CRM</a>
-	    <div class="language">
-		<a href="Dashboard.php?lang=ro">ro</a>
-		<a href="Dashboard.php?lang=en">en</a>
-	    </div>
         </div>
         <div class="headerinner">
             <ul class="headmenu">

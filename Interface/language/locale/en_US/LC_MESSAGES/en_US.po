@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: test\n"
+"POT-Creation-Date: 2013-12-10 10:22+0200\n"
+"PO-Revision-Date: 2013-12-10 10:39+0200\n"
+"Last-Translator: \n"
+"Language-Team: tesm <test@ss.ro>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.1\n"
+"X-Poedit-Basepath: c:\\temp\\locale\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: c:\\temp\\locale\n"
+
+#: c:\temp\locale/Dashboard.php:53 c:\temp\locale/Dashboard.php:191
+msgid "Panou"
+msgstr "Dashboard"
+
+#: c:\temp\locale/Dashboard.php:60 c:\temp\locale/Dashboard.php:111
+#: c:\temp\locale/Dashboard.php:170
+msgid "Produse"
+msgstr "Products"
+
+#: c:\temp\locale/Dashboard.php:68 c:\temp\locale/Dashboard.php:117
+#: c:\temp\locale/Dashboard.php:171
+msgid "Furnizori"
+msgstr "Suppliers"
+
+#: c:\temp\locale/Dashboard.php:75 c:\temp\locale/Dashboard.php:123
+msgid "Clienti"
+msgstr "Clients"
+
+#: c:\temp\locale/Dashboard.php:81 c:\temp\locale/Dashboard.php:130
+#: c:\temp\locale/Dashboard.php:173
+msgid "Contacte"
+msgstr "Contacts"
+
+#: c:\temp\locale/Dashboard.php:87 c:\temp\locale/Dashboard.php:136
+msgid "Intalniri"
+msgstr "Meetings"
+
+#: c:\temp\locale/Dashboard.php:95
+msgid "gmail@gmail.com"
+msgstr "gmail@gmail.com"
+
+#: c:\temp\locale/Dashboard.php:96
+msgid "Sign Out"
+msgstr "Sign Out"
+
+#: c:\temp\locale/Dashboard.php:109
+msgid "Navigare"
+msgstr "Navigation"
+
+#: c:\temp\locale/Dashboard.php:110 c:\temp\locale/Dashboard.php:206
+msgid "Panou principal"
+msgstr "Dashboard"
+
+#: c:\temp\locale/Dashboard.php:113 c:\temp\locale/Dashboard.php:132
+#: c:\temp\locale/Dashboard.php:138
+msgid "Vezi toate"
+msgstr "See all"
+
+#: c:\temp\locale/Dashboard.php:114
+msgid "Adaugă produs"
+msgstr "Add products"
+
+#: c:\temp\locale/Dashboard.php:119 c:\temp\locale/Dashboard.php:125
+msgid "Vezi toti"
+msgstr "See all"
+
+#: c:\temp\locale/Dashboard.php:120
+msgid "Adaugă furnizor"
+msgstr "Add supplier"
+
+#: c:\temp\locale/Dashboard.php:126
+msgid "Adaugă client"
+msgstr "Add client"
+
+#: c:\temp\locale/Dashboard.php:133
+msgid "Adaugă contact"
+msgstr "Add contact"
+
+#: c:\temp\locale/Dashboard.php:139
+msgid "Adaugă intalnire"
+msgstr "Add meeting"
+
+#: c:\temp\locale/Dashboard.php:140
+msgid "Calendar intalniri"
+msgstr "Meetins calendar"
+
+#: c:\temp\locale/Dashboard.php:153
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: c:\temp\locale/Dashboard.php:165
+msgid "Pentru a cauta apasa aici..."
+msgstr "To search click here ..."
+
+#: c:\temp\locale/Dashboard.php:165 c:\temp\locale/Dashboard.php:178
+msgid "Caută"
+msgstr "Search"
+
+#: c:\temp\locale/Dashboard.php:169
+msgid "Alege"
+msgstr "Choose"
+
+#: c:\temp\locale/Dashboard.php:172
+msgid "Clienți"
+msgstr "Clients"
+
+#: c:\temp\locale/Dashboard.php:174
+msgid "Întâlniri"
+msgstr "Meetings"
+
+#: c:\temp\locale/Dashboard.php:190
+msgid "Functionalitati"
+msgstr "Features"
+
+#: c:\temp\locale/Dashboard.php:208
+msgid "Tabel clienți"
+msgstr "Customers table"
+
+#: c:\temp\locale/Dashboard.php:228
+msgid "Bine ai revenit. "
+msgstr "Welcome back."
+
+#: c:\temp\locale/Dashboard.php:228
+msgid "Intră în cont."
+msgstr "Log in"
+
+#: c:\temp\locale/Dashboard.php:239
+msgid "Nume Companie"
+msgstr "Company Name"
+
+#: c:\temp\locale/Dashboard.php:240
+msgid "Manager Cont"
+msgstr "Account Manager"
+
+#: c:\temp\locale/Dashboard.php:241
+msgid "Domeniu"
+msgstr "Domain"
+
+#: c:\temp\locale/Dashboard.php:242
+msgid "Website"
+msgstr "Website"
+
+#: c:\temp\locale/Dashboard.php:243
+msgid "Cifra afaceri"
+msgstr "Turnover"
+
+#: c:\temp\locale/Dashboard.php:244
+msgid "Persoană de contact"
+msgstr "Contact Person"
+
+#: c:\temp\locale/Dashboard.php:245
+msgid "Telefon / fax"
+msgstr "Phone/Fax"
+
+#: c:\temp\locale/Dashboard.php:246
+msgid "E-mail"
+msgstr "E-mail"
+
+#: c:\temp\locale/Dashboard.php:247
+msgid "Adresa"
+msgstr "Address"
+
+#: c:\temp\locale/Dashboard.php:248
+msgid "Opțiuni"
+msgstr "Options"
+
+#: c:\temp\locale/test.php:46
+#, php-format
+msgid "Hello, %s, it is nice to see you today.\n"
+msgstr "Hello, %s, it is nice to see you today.\n"
+
+#: c:\temp\locale/test.php:47
+msgid "clienti\n"
+msgstr "clients\n"

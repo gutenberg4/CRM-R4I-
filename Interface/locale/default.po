@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: engleza\n"
+"POT-Creation-Date: 2013-12-09 22:51+0200\n"
+"PO-Revision-Date: 2013-12-10 10:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: ceva ceva\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: c:\\temp\\locale\n"
+
+#: c:\temp\locale/test.php:46
+#, php-format
+msgid "Hello, %s, it is nice to see you today.\n"
+msgstr "%s aiurea\n"
