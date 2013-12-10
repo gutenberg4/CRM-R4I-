@@ -1,9 +1,4 @@
-Acesta este doar un test de PHP pentru entry-level.
-Nu este un proiect comercial sau un sistem care va fi pus in productie.
+Sistem de gestionare a relatiei cu clientii
 
-Cum se instaleaza:
-1) XAMPP/WAMP sau alta solutie de genul acesta
-2) se verifica config.php si DB
-3) se schimba parola din DB 
-
-
+Pentru mai multe detalii despre proiect viziteaza:
+http://banica.github.io/crm
